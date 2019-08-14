@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="域名间换行即可多个查询"
+            android:maxLines="5"
+            android:id="@+id/et_domain_name"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="清空"
+                android:id="@+id/btn_empty"
+                android:background="#C59595"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="可用"
+                android:id="@+id/btn_usable"
+                android:background="#FF4CAF50"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/btn_query"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_domains"/>
+
+</LinearLayout>
