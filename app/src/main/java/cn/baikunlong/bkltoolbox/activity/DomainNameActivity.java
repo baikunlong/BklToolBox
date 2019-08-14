@@ -28,6 +28,9 @@ public class DomainNameActivity extends BaseActivity implements View.OnClickList
     private ListView lv_domains;
     private BaseAdapter adapter;
 
+    /**
+     * 是否只显示可用
+     */
     private boolean isOnlyUsable=false;
 
     @Override
